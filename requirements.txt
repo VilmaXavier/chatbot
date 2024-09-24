@@ -68,7 +68,7 @@ namex
 narwhals
 networkx
 nltk
-numpy
+numpy==1.23.5  # or a compatible version for your TensorFlow version
 oauthlib
 opt-einsum
 optree
@@ -115,8 +115,7 @@ sympy
 tenacity
 tensorboard
 tensorboard-data-server
-tensorflow-cpu
-tensorflow-intel
+tensorflow-cpu==2.12.0  # specify the version you're using
 termcolor
 tf_keras
 threadpoolctl
