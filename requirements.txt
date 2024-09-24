@@ -115,7 +115,7 @@ sympy
 tenacity
 tensorboard
 tensorboard-data-server
-tensorflow
+tensorflow-cpu
 tensorflow-intel
 termcolor
 tf_keras
