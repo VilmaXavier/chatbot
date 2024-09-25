@@ -1,4 +1,6 @@
 Flask==2.2.5
 Flask-Cors==3.0.10
 transformers==4.12.5
+torch==2.0.1
 requests==2.31.0
+gunicorn==20.1.0  # For running Flask apps in production
