@@ -1,5 +1,4 @@
 Flask==3.0.3
 Flask-Cors==4.0.1
 transformers==4.43.3
-tensorflow==2.13.0  # TensorFlow Lite requires TensorFlow for compatibility
-tflite-runtime==2.13.0  # TensorFlow Lite Runtime
+tflite-runtime==2.17.0  # Use the latest TensorFlow Lite Runtime version
