@@ -18,5 +18,5 @@
   },
   "installCommand": "pip install --no-cache-dir -r requirements.txt",
   "buildCommand": "",
-  "pythonVersion": "3.12"
+  "pythonVersion": "3.10"
 }
