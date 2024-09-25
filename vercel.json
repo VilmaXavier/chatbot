@@ -12,11 +12,6 @@
       "dest": "app.py"
     }
   ],
-  "env": {
-    "FLASK_ENV": "production",
-    "PYTHONUNBUFFERED": "true"
-  },
-  "installCommand": "pip install --no-cache-dir -r requirements.txt",
-  "buildCommand": "",
-  "pythonVersion": "3.10"
+  "pythonVersion": "3.10",
+  "installCommand": "pip install --no-cache-dir -r requirements.txt"
 }
