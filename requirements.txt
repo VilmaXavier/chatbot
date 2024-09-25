@@ -1,4 +1,3 @@
 Flask==3.0.3
 Flask-Cors==4.0.1
 transformers==4.43.3
-tflite-runtime==2.17.0  # Use the latest TensorFlow Lite Runtime version
