@@ -1,5 +1,6 @@
 import tensorflow as tf
 
+# Configure GPU settings if applicable
 gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
     try:
@@ -7,7 +8,8 @@ if gpus:
             tf.config.experimental.set_memory_growth(gpu, True)
             tf.config.experimental.set_virtual_device_configuration(
                 gpu,
-                [tf.config.experimental.VirtualDeviceConfiguration(memory_limit=4096)])  # Set to 4096MB or appropriate value
+                [tf.config.experimental.VirtualDeviceConfiguration(memory_limit=4096)]  # Set to 4096MB or appropriate value
+            )
     except RuntimeError as e:
         print(e)
 
@@ -38,10 +40,14 @@ def chatbot():
     
     # Get answer from the QA model
     answer = qa_pipeline(qa_input)
-    
+
+    # Check and truncate answer if too long
+    max_length = 1000  # Set a maximum length for the answer
+    answer_text = answer['answer'][:max_length]  # Truncate to first 1000 characters if necessary
+
     return jsonify({
         "question": user_query,
-        "answer": answer['answer']
+        "answer": answer_text
     })
 
 # Serve the HTML page
