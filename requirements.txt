@@ -1,6 +1,5 @@
 Flask
-Flask-Cors
 transformers
 torch
-requests
-gunicorn
+tensorflow
+Flask-CORS
